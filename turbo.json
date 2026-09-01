@@ -1,0 +1,7 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "futureFlags": { "filterUsingTasks": true },
+  "tasks": {
+    "build": { "outputs": [] }
+  }
+}

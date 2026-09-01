@@ -1,0 +1,1 @@
+{ "name": "my-app", "version": "0.0.0", "scripts": { "build": "echo building my-app" }, "dependencies": { "util": "*" } }

@@ -1,0 +1,6 @@
+{
+  "name": "repro",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "packageManager": "npm@10.9.4"
+}
