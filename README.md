@@ -1,5 +1,7 @@
 # --filter='[main...HEAD]' reads the range as tip to tip
 
+Fixed in https://github.com/vercel/turborepo/pull/13917, merged 2 Sep 2026.
+
 Reproduction for https://github.com/vercel/turborepo/pull/13917.
 
 With `filterUsingTasks` on, `--filter='[main...HEAD]'` diffs the two branch tips instead of merge base to head. So if `main` moved after you branched, packages you never touched get selected because they changed on `main`. The other direction is worse: a file that is byte identical on both tips because you cherry picked it does not show in a tip to tip diff, and that task is skipped.
